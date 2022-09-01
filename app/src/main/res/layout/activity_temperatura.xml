@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TemperaturaActivity">
+
+    <EditText
+        android:id="@+id/editValor"
+        android:layout_width="310dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Valor em graus Celsius"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/grupoTemperatura"
+        android:layout_width="216dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editValor">
+
+        <RadioButton
+            android:id="@+id/radioKelvin"
+            android:layout_width="100dp"
+            android:layout_height="54dp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:text="Kelvin" />
+
+        <RadioButton
+            android:id="@+id/radioFahrenheit"
+            android:layout_width="100dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:text="Fahrenheit" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editResultado"
+        android:layout_width="310dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="68dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grupoTemperatura" />
+
+    <Button
+        android:id="@+id/buttonConverter"
+        android:layout_width="192dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="68dp"
+        android:text="converter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
